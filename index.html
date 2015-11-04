@@ -1,0 +1,113 @@
+<html>
+<head>
+	<link rel="StyleSheet" type="text/css" href="Style.css" media="all" />
+	<title> Home </title>
+
+<script type="text/javascript">
+function func()
+{
+ alert("Why are you hovering?!");
+}
+
+function white()
+
+{
+
+document.body.style.backgroundColor="white";
+
+}
+
+function red()
+
+{
+
+document.body.style.backgroundColor="red";
+
+}
+
+function yellow()
+
+{
+
+document.body.style.backgroundColor="yellow";
+
+}
+
+function blue()
+
+{
+
+document.body.style.backgroundColor="blue";
+
+}
+
+function grey()
+
+{
+
+document.body.style.backgroundColor="grey";
+
+}
+
+var randomlinks=new Array()
+randomlinks[0]="http://slashdot.org/"
+randomlinks[1]="http://www.thinkgeek.com/"
+randomlinks[2]="http://despair.com/"
+randomlinks[3]="http://www.redbubble.com/"
+randomlinks[4]="http://googleresearch.blogspot.com/"
+randomlinks[5]="https://developers.google.com/speed/libraries/"
+
+function random()
+{
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="header">
+	<img alt="" align="left" width="90" height="90" src="csm.png" name="pic" onmouseover="func()"/>
+	<h1>Brought to you by MARWAN</h1>
+</div>
+
+<div>
+<div id="verticalmenu">
+	<li><a class="black" href="index.html">Home</a> </li>
+	<li><a class="black" href="About.html">About Me</a> </li>
+	<li><a class="black" href="#">Courses</a>
+	<ul>
+    		<li><a class="black" href="#">CP1</a> </li>
+    		<li><a class="black" href="#">CP2</a> </li>
+    		<li><a class="black" href="#">CP3</a> </li>
+    		<li><a class="black" href="#">Discrete</a> </li>
+    		<li><a class="black" href="#">Database</a> </li>
+    		<li><a class="black" href="#">OS</a> </li>
+	</ul>
+
+	</li>
+	<li><a class="black" href="guest.html">Guest Book</a> </li>
+</div>
+
+<div id="section">
+	<h2>Welcome to my assignment<h2><br>
+
+<input type="button" onclick="red()" style="background-color:red" value="Red"</button>
+<input type="button" onclick="yellow()" style="background-color:yellow" value="Yellow"</button>
+<input type="button" onclick="blue()" style="background-color:blue" value="Blue"</button>
+<input type="button" onclick="grey()" style="background-color:grey" value="Grey"</button>
+<input type="button" onclick="white()" style="background-color:white" value="Return to defaults"</button><br><br>
+<input type="button" onclick="random()" style="background-color:white;color=" value="click me!"</button>
+
+</div>
+
+
+<div id="adsection"></div>
+</div>
+
+<div id="footer">Copyright &copy; Marwan's Co</div>
+
+</body>
+
+</html>
